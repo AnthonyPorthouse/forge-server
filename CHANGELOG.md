@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/AnthonyPorthouse/forge-server/compare/v1.1.0...v1.1.1) (2024-05-28)
+
+
+### Bug Fixes
+
+* correctly pass build args ([df450e5](https://github.com/AnthonyPorthouse/forge-server/commit/df450e548036257478979b5a4ac4a19292f15b1b))
+
 ## [1.1.0](https://github.com/AnthonyPorthouse/forge-server/compare/v1.0.0...v1.1.0) (2024-05-28)
 
 
