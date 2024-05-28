@@ -25,6 +25,11 @@ configure-server-properties.sh
 
 chown -R "${USER}":"${USER}" /minecraft
 
-COMMAND="${*:-"cd /minecraft; ./run.sh $JAR_NAME nogui"}"
+COMMAND="${*:-"cd /minecraft; ./run.sh nogui"}"
+
+if [ ! -f run.sh ]; then
+    echo "Detected legacy forge server"
+    COMMAND="${*:-"cd /minecraft; $(which java) ${JAVA_OPTS} -jar forge-${MINECRAFT_VERSION}-${FORGE_VERSION}.jar nogui"}"
+fi
 
 su -l "${USER}" -c "$COMMAND"
