@@ -74,7 +74,7 @@ jobs:
         with:
           context: .
           build-args: |
-            JAVA_VERSION:${{matrix.java-version}}
+            JAVA_VERSION=${{matrix.java-version}}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
