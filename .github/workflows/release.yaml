@@ -35,7 +35,7 @@ jobs:
     if: ${{ needs.release-please.outputs.releases_created }}
     strategy:
       matrix:
-        java-version: [17, 16, 11, 8]
+        java-version: [17, 16, 11, 8, 8-jre]
 
     steps:
       - name: Checkout
