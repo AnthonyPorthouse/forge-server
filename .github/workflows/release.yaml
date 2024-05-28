@@ -27,7 +27,6 @@ jobs:
         id: release-please
         with:
           release-type: simple
-          package-name: fabric-server
       
   build:
     name: Build ${{ matrix.java-version}}
