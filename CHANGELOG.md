@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/AnthonyPorthouse/forge-server/compare/v1.0.0...v1.1.0) (2024-05-28)
+
+
+### Features
+
+* handle legacy forge launcher ([2ab877c](https://github.com/AnthonyPorthouse/forge-server/commit/2ab877cd0a0afe6e017d2a761d9909718d30aae1))
+
+
+### Bug Fixes
+
+* set executable bit for shell scripts ([948c84f](https://github.com/AnthonyPorthouse/forge-server/commit/948c84f30c1be364446c0aadd96f8e267e1f0ba3))
+
 ## 1.0.0 (2024-05-28)
 
 
