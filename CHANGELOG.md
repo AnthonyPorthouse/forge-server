@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/AnthonyPorthouse/forge-server/compare/v1.1.2...v1.2.0) (2024-06-06)
+
+
+### Features
+
+* add java 21 for minecraft 1.20.5 and higher ([e1d68ea](https://github.com/AnthonyPorthouse/forge-server/commit/e1d68eaded1f8e93a237e73fa3e5810a29daff04))
+
 ## [1.1.2](https://github.com/AnthonyPorthouse/forge-server/compare/v1.1.1...v1.1.2) (2024-06-04)
 
 
