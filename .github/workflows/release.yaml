@@ -35,7 +35,7 @@ jobs:
     if: ${{ needs.release-please.outputs.releases_created }}
     strategy:
       matrix:
-        java-version: [17, 16, 11, 8, 8-jre]
+        java-version: [17, 16, 11, 8]
 
     steps:
       - name: Checkout
@@ -63,7 +63,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}},value=${{ needs.release-please.outputs.tag_name }}
             type=semver,pattern={{major}},value=${{ needs.release-please.outputs.tag_name }}
 
-            type=raw,value=latest,prefix=,enable=${{ matrix.java-version == 17 && 'true' || 'false' }}
+            type=raw,value=latest,prefix=,enable=${{ matrix.java-version == 21 && 'true' || 'false' }}
             type=raw,value=latest
             type=raw,value=java${{ matrix.java-version }},prefix=
             

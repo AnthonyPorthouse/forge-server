@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        java-version: [17, 16, 11, 8, 8-jre]    
+        java-version: [21, 17, 16, 11, 8]    
 
     steps:
       - uses: actions/checkout@v4
@@ -55,7 +55,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}},value=${{ steps.lastTag.outputs.tag }}
             type=semver,pattern={{major}},value=${{ steps.lastTag.outputs.tag }}
 
-            type=raw,value=latest,prefix=,enable=${{ matrix.java-version == 17 && 'true' || 'false' }}
+            type=raw,value=latest,prefix=,enable=${{ matrix.java-version == 21 && 'true' || 'false' }}
             type=raw,value=latest
             type=raw,value=java${{ matrix.java-version }},prefix=
             
